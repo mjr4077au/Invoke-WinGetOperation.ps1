@@ -1,0 +1,15 @@
+Invoke-WinGetOperation.ps1
+
+
+This script wraps around the winget.exe binary to provide enhanced usability for install, uninstall and list (detection) operations via Intune or SCCM.
+
+Additionally, this script logs all transactions to disk, colour-codes errors and extracts install failure exit codes and provides it to the caller, plus more.
+
+
+Mitch Richters
+1.27
+
+%windir%\sysnative\cmd.exe /c "copy /V /Y Invoke-WinGetOperation.ps1 %windir%\system32"
+%windir%\sysnative\cmd.exe /c "del /F /Q %windir%\system32\Invoke-WinGetOperation.ps1"
+
+Determine behavior based on return codes
